@@ -1,5 +1,3 @@
-const e = require('express')
-const places = require('../models/places.js')
 const router = require('express').Router()
 const db = require('../models')
 
