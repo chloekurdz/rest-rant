@@ -16,6 +16,36 @@ function show (data) {
                 </button>
             </form>
         </Def>
+        
+    )
+    return (
+        <Def>
+            <main>
+                <div className="row">
+                    <div className="col-sm-6">
+                        <img src={data.place.pic} alt={data.place.name} />
+                        <h3>
+                            Located in {data.place.city}, {data.place.state}
+                        </h3>
+                    </div>
+                    <div className="col-smm-6">
+                        <img src={data.place.pic} alt={data.place.name} />
+                        <h3>
+                            Located in {data.place.city}, {data.place.state}
+                        </h3>
+                        <h2>
+                            Description
+                        </h2>
+                        <h3>
+                            {data.place.showEstablished()}
+                        </h3>
+                        <h4>
+                            Serving {data.place.cuisnes}
+                        </h4>
+                    </div>
+                </div>
+            </main>
+        </Def>
     )
 }
 
