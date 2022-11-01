@@ -2,10 +2,19 @@ const React = require('react')
 const Def = require('../default')
 
 function show (data) {
+    let mesage = ''
+    if (data.message) {
+        message = (
+            <h4 className="alert-danger">
+                {data.message}
+            </h4>
+        )
+    }
     return (
         <Def>
             <main>
                 <h1>{ data.place.name }</h1>
+                {message}
             </main>
             <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                 Edit
